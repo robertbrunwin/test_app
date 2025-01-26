@@ -16,7 +16,8 @@ spec:
         spec:
             containers:
                 - name: app
-                  image: robertbrunwin/app-helm:{{ .Values.env.APP_VERSION }}
+                  #image: robertbrunwin/app-helm:{{ .Values.env.APP_VERSION }}
+                  image: robertbrunwin/app-helm:1
                   #image: public.ecr.aws/y8z0q9o7/app-helm:latest:{{ .Values.env.APP_VERSION }}
                   ports:
                     - containerPort: 3000
@@ -40,5 +41,3 @@ spec:
                     timeoutSeconds: 5
                     successThreshold: 1
                     failureThreshold: 3
-    imagePullSecrets:
-    - name: regcred
