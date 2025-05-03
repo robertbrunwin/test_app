@@ -61,7 +61,7 @@ resources: {}
   # choice for the user. This also increases chances charts run on environments with little
 
 env:
-  APP_VERSION: 1
+  APP_VERSION: 9b9bee0b67a103b84cf7b4e770bbdbb788b94e79
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # limits:
